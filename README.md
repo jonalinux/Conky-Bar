@@ -1,4 +1,6 @@
-# Arch-Conky-Cinnamon![Screenshot from 2023-01-19 23-13-12](https://user-images.githubusercontent.com/103053714/213592464-6195c5b5-a04f-4fc7-a70b-7214a258377c.png)
+
+![Screenshot from 2023-01-20 02-31-41](https://user-images.githubusercontent.com/103053714/213605667-d3269f4b-8b1c-424c-8678-615283653017.png)
+
 
 Dependencies
 - jq
