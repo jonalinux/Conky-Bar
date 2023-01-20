@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=gnome-terminal -- /bin/sh -c /home/jonathan/.config/updates/updatenow
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name=Archlinux Updates
+Icon=/home/jonathan/.config/updates/icon/icon.png
+Categories=GTK;GNOME;System;

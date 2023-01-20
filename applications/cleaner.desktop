@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Cleaner
+Icon=accessories-system-cleaner.png
+Type=Application
+Exec=gnome-terminal -- /bin/sh -c /home/jonathan/.config/Cleaner/cleaner 
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Categories=GTK;GNOME;System;
+

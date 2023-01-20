@@ -1,0 +1,17 @@
+#!/bin/sh
+# Updates for Arch Linux.
+# Author Jonathan Sanfilippo 
+# Date Wed Jan 18 2023
+# Copyright (C) 2023 Jonathan Sanfilippo <jonathansanfilippo.uk@gmail.com>
+
+
+chnw="$HOME/.config/updates/verified"
+
+sudo pikaur -Syu 
+
+echo ""
+echo ""
+read -p "Press [Enter] key to exit."
+echo ""
+echo ""
+$chnw

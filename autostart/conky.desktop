@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=conky
+Type=Application
+Exec=/home/jonathan/.config/conky/start
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+
