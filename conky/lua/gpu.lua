@@ -10,7 +10,7 @@ function conky_main_bars()
 			max=100,
 			alarm=50,
 			bg_colour={0xffffff,0},
-			fg_colour={0xFFFFFF,0.20},
+			fg_colour={0x76b900,0.20},
 			alarm_colour={0x00FF00,1},
 			x=0,y=0,
 			blocks=1,
@@ -18,7 +18,7 @@ function conky_main_bars()
 			height=198,width=30,
 			angle=90,
 			smooth=true,
-			mid_colour={{0.5,0xFFFFFF,0.15}}			
+			mid_colour={{0.5,0x76b900,1}}			
 			},				
 		}
 	
