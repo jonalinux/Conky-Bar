@@ -7,6 +7,8 @@
 #url
 list="$HOME/.config/updates/list"
 pending="$HOME/.config/updates/pending"
+SU="$HOME/.config/updates/SU"
+
 
 #Variable Cmd
 get_Variables(){
@@ -21,18 +23,19 @@ get_Variables
       
 #Pending
 if [ "$Pending" -eq 1 ]; then
-             echo "$Pending Update Pending" > "$pending"
+             echo "$Pending Update" > "$pending"
              echo "$ListUpdates" "$AUR"  > "$list"
-             
+               echo "" > "$SU"
 
 elif [ "$Pending" -ge 1 ]; then
-             echo "$Pending Updates Pending" > "$pending"
+             echo "$Pending Updates" > "$pending"
              echo "$ListUpdates" "$AUR"  > "$list"
-
+               echo "" > "$SU"
 
 else
-           echo "" > "$pending"
+           echo "System Updated" > "$SU"
            echo ""  > "$list"
+            echo "" > "$pending"
             
 fi
 
