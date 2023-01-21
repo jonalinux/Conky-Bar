@@ -13,6 +13,8 @@ conky -c $HOME/.config/conky/bar4.conf &> /dev/null &
 conky -c $HOME/.config/conky/bar4b.conf &> /dev/null &
 conky -c $HOME/.config/conky/bar5.conf &> /dev/null &
 conky -c $HOME/.config/conky/bar6.conf &> /dev/null &
+conky -c $HOME/.config/conky/bar7b.conf &> /dev/null &
+sleep 0.1s
 conky -c $HOME/.config/conky/bar7.conf &> /dev/null &
 
 

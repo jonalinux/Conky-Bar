@@ -21,22 +21,27 @@ Pending=$(expr $(pikaur -Qqua | wc -l) + $(checkupdates 2>/dev/null | wc -l) )
 while true; do
 get_Variables
       
+      
 #Pending
 if [ "$Pending" -eq 1 ]; then
              echo "$Pending Update" > "$pending"
-             echo "$ListUpdates" "$AUR"  > "$list"
-             echo "" > "$SU"
-             
+             echo " " > "$list"
+             echo " " >> "$list"
+             echo "$ListUpdates" "$AUR"  >> "$list"
+               echo "" > "$SU"
 
 elif [ "$Pending" -ge 1 ]; then
              echo "$Pending Updates" > "$pending"
-             echo "$ListUpdates" "$AUR"  > "$list"
-             echo "" > "$SU"
+               echo " " > "$list"
+             echo " " >> "$list"
+             echo "$ListUpdates" "$AUR"  >> "$list"
+               echo "" > "$SU"
 
 else
            echo "System Updated" > "$SU"
            echo ""  > "$list"
             echo "" > "$pending"
+            
 fi
 
 

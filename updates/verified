@@ -24,12 +24,16 @@ get_Variables
 #Pending
 if [ "$Pending" -eq 1 ]; then
              echo "$Pending Update" > "$pending"
-             echo "$ListUpdates" "$AUR"  > "$list"
+             echo " " > "$list"
+             echo " " >> "$list"
+             echo "$ListUpdates" "$AUR"  >> "$list"
                echo "" > "$SU"
 
 elif [ "$Pending" -ge 1 ]; then
              echo "$Pending Updates" > "$pending"
-             echo "$ListUpdates" "$AUR"  > "$list"
+               echo " " > "$list"
+             echo " " >> "$list"
+             echo "$ListUpdates" "$AUR"  >> "$list"
                echo "" > "$SU"
 
 else
