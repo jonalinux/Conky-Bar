@@ -15,10 +15,10 @@ function conky_main_bars()
 			x=0,y=0,
 			blocks=1,
 			space=2,
-			height=190,width=30,
+			height=160,width=30,
 			angle=90,
 			smooth=true,
-			mid_colour={{0.5,0xFFFF00,1}}			
+			mid_colour={{0.5,0xFFFF00,0.6}}			
 			},				
 		}
 	

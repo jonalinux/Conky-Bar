@@ -5,21 +5,22 @@ require 'cairo'
 function conky_main_bars()
 	bars_settings={
 		{
-		        name="nvidia",
-			arg="gpuutil",
+		        name='fs_used_perc',
+		        arg='/home',
 			max=100,
 			alarm=50,
-			bg_colour={0xffffff,0},
-			fg_colour={0x76b900,0.40},
-			alarm_colour={0x00FF00,1},
-			x=0,y=0,
+			bg_colour={0xFFFFFF,0.1},
+			fg_colour={0x0000FF,1},
+			alarm_colour={0xFF0000,1},
+			x=25,y=24,
 			blocks=1,
 			space=2,
-			height=170,width=30,
+			height=85,width=3,
 			angle=90,
 			smooth=true,
-			mid_colour={{0.5,0x76b900,1}}			
-			},				
+			mid_colour={{0.5,0x0000FF,1}}			
+			},		
+						
 		}
 	
 -----------END OF PARAMETERS--------------

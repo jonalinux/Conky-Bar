@@ -15,11 +15,12 @@ function conky_main_bars()
 			x=15,y=24,
 			blocks=1,
 			space=2,
-			height=330,width=10,
+			height=145,width=3,
 			angle=90,
 			smooth=true,
 			mid_colour={{0.5,0x0000FF,1}}			
-			},				
+			},		
+						
 		}
 	
 -----------END OF PARAMETERS--------------
