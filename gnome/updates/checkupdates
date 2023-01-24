@@ -1,0 +1,50 @@
+#!/bin/sh
+# Updates for Arch Linux.
+# Author Jonathan Sanfilippo 
+# Date Wed Jan 18 2023
+# Copyright (C) 2023 Jonathan Sanfilippo <jonathansanfilippo.uk@gmail.com>
+
+#url
+list="$HOME/.config/updates/list"
+pending="$HOME/.config/updates/pending"
+SU="$HOME/.config/updates/SU"
+
+#Variable Cmd
+get_Variables(){
+AUR=$(pikaur -Qqua ;)
+ListUpdates=$(checkupdates 2>/dev/null )
+Pending=$(expr $(pikaur -Qqua | wc -l) + $(checkupdates 2>/dev/null | wc -l) )
+}
+
+
+
+while true; do
+get_Variables
+      
+      
+#Pending
+if [ "$Pending" -eq 1 ]; then
+             echo "$Pending Update" > "$pending"
+             echo " " > "$list"
+             echo " " >> "$list"
+             echo "$ListUpdates" "$AUR"  >> "$list"
+               echo "" > "$SU"
+
+elif [ "$Pending" -ge 1 ]; then
+             echo "$Pending Updates" > "$pending"
+               echo " " > "$list"
+             echo " " >> "$list"
+             echo "$ListUpdates" "$AUR"  >> "$list"
+               echo "" > "$SU"
+
+else
+           echo "System Updated" > "$SU"
+           echo ""  > "$list"
+            echo "" > "$pending"
+            
+fi
+
+
+sleep "1800"
+get_Variables
+done

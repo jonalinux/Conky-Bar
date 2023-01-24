@@ -1,0 +1,24 @@
+#!/bin/sh
+
+Orphans=$(pacman -Qtdq | wc -l);
+CachePacman=$(du -sh  /var/cache/pacman/pkg  | awk '{ printf $1}'); 
+Cache=$( du -sh $HOME/.cache/ | awk '{ printf $1}'); 
+SIZE=$(du -sh $HOME/.local/share/Trash/files | awk '{ printf $1}');
+echo ""
+echo ""
+echo "Packages Orphans $Orphans"
+echo "Packages Cache $CachePacman"
+echo "Home Cache $Cache"
+echo "Trash $SIZE"
+echo ""
+echo ""
+echo ""
+read -p "Press [Enter] key to Clean Everything"
+echo ""
+echo ""
+
+
+sudo pacman -Rns $(pacman -Qdtq)
+sudo pacman -Scc
+rm -rf ~/.cache/*
+rm -rf ~/.local/share/Trash/files/*
